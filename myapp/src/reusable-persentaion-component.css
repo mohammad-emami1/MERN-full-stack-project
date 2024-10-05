@@ -1,0 +1,50 @@
+.rpc-body {
+    display: flex;
+    height: 100vh;
+    background-color: white;
+}
+
+.rpc-body-inv {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+}
+
+.rpc-image {
+    margin: 250px 50px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.rpc-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: white; /* White background for text section */
+    width: 33.33%; /* Width of the text section */
+}
+
+.rpc-button {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.invert-colors {
+    background-color: black; /* Inverted background for text section */
+    color: white; /* Inverted text color */
+}
+
+.invert-colors .rpc-button {
+    background-color: black; /* Button background black */
+    border: 2px solid white; /* Button border white */
+}
+
+.invert-alignment {
+    flex-direction: row-reverse; /* Reverse the order of the flex items */
+}
