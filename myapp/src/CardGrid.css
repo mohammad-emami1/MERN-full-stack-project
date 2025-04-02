@@ -1,0 +1,13 @@
+/* CardGrid.css */
+.card-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a responsive grid with a minimum card width of 300px */
+    gap: 20px; /* Space between cards */
+    max-width: 1200px; /* Set a max width for the grid */
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+.card-grid .markdown-card {
+    display: flex; /* Ensure it can align children */
+    flex-direction: column; /* Stack content vertically */
+}

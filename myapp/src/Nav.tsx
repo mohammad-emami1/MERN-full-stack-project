@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./Nav.css";
 import pic from "./assets/logo-banana.png";
+import { useContext } from "react";
 
 type Page = {
   name: string;
@@ -23,7 +24,7 @@ function Navv({ pages }: NavvProps) {
           </li>
         ))}
       </ul>
-      <button>No login yet</button>
+      
     </nav>
   );
 }

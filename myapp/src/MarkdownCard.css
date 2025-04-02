@@ -1,0 +1,48 @@
+/* MarkdownCard.css */
+
+.markdown-card {
+    width: 300px; /* Set width to 20% of the viewport width */
+    height:fit-content;
+    position: relative;
+    margin: 10px; /* Margin around each card */
+    padding: 10px; /* Padding for better whitespace */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    color: #333; /* Default text color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack title and content vertically */
+    justify-content: flex-start; /* Align items to the start */
+    /* Remove min-height to allow dynamic height */
+}
+
+.markdown-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.markdown-card-title {
+    color: white; /* Title text color */
+    font-weight: 500; /* Make the title less bold */
+    font-size: 0.9em; /* Smaller title size */
+    padding: 5px 10px; /* Reduce padding for a tag-like appearance */
+    border-radius: 15px; /* Rounded corners for tag */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for depth */
+    display: inline-block; /* Allow the tag to only take up as much space as necessary */
+    margin: 0 auto; /* Center the tag */
+    text-align: center; /* Center align title text */
+}
+
+.markdown-card-content {
+    line-height: 1.6; /* Improve readability with increased line height */
+    color: #333; /* Content text color */
+    font-size: small;
+    flex-grow: 1; /* Allow content to grow and fill available space */
+    overflow-wrap: break-word; /* Ensure long words break to prevent overflow */
+    overflow: visible; /* Ensure overflow is visible to adapt height */
+    position: relative;
+    /* Remove fixed height or conflicting properties */
+    display: block; /* Stack content normally */
+}
+
+/* Additional styles can be added as necessary */
